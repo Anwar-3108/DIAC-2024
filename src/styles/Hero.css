@@ -1,0 +1,251 @@
+main {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  margin: 0 auto;
+  min-height: 80vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+ 
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* for new design  */
+.swiper-slide {
+  /* existing styles ... */
+  position: relative;
+}
+
+.swiper-slide .list-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  opacity: 0;
+  background-color: black;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-slide:hover .list-container {
+  opacity: 0.8;
+}
+
+.swiper-slide:hover ul {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.swiper-slide ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%; /* Adjust the vertical position as needed */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the list */
+  opacity: 0;
+  background-color: #000000;
+  transition: opacity 0.3s ease-in-out;
+  /* pointer-events: none; */
+  border-radius: 5%;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.swiper-slide li {
+  color: white;
+  padding: 0.1rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+.swiper-slide li:hover {
+  color: red;
+}
+
+/* ===== */
+
+.arrow-icon {
+  display: none;
+  /* position: absolute; */
+}
+
+.list-item:hover .arrow-icon {
+  display: inline-block;
+}
+
+/* ===== */
+
+/* Add any other styling as needed */
+
+/* for new design  */
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+  
+  /* filter: brightness(0.8) saturate(90%) hue-rotate(10deg); */
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+   
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 18.75rem;
+  height: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  
+  
+}
+
+.swiper-slide h2 {
+  /* color: #0d0d0d; */
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide p {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide p:hover {
+  color: #aa0000;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+  
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+  
+}
+
+.swiper-slide--one {
+  /* background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://5.imimg.com/data5/SELLER/Default/2021/2/UN/XY/LX/121708011/online-fluoride-analyzer-500x500.jpg")
+      no-repeat; */
+  /* background-image: url("../assets/images/pages/Home/process-automation-hero-0.2.jpg"); */
+  background-image: url("../assets/images/pages/Home/home-hero-carausel-img.avif");
+  
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center;
+  border-radius: 5%;
+  
+  /* filter: blur(10px);  */
+
+  /* Center the background image */
+}
+
+.swiper-slide--two {
+  /* background: linear-gradient(#fe0f0f, #f6000000, #ff060600), */
+  /* url("https://5.imimg.com/data5/SELLER/Default/2023/5/311880653/LH/QH/AF/121708011/aztec-sample-coolers-photograph-500x500.jpeg"); */
+  /* no-repeat 50% 50%; */
+  /* background-image: url("../assets/images/analytical-product.jpg"); */
+  /* background-image: url("../assets/images/pages/Home/pxfuel.jpg"); */
+  background-image: url("../assets/images/pages/Home/home-hero-carausel-img.avif");
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center;
+  border-radius: 5%;
+}
+
+.swiper-slide--three {
+  /* background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), */
+  /* url("https://5.imimg.com/data5/SELLER/Default/2021/2/HI/CJ/TH/121708011/chlorine-analyser-500x500.jpg") */
+  background-image: url("../assets/images/pages/Home/home-hero-carausel-img.avif");
+  /* no-repeat 50% 50%; */
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; /* Ensure the background image covers the entire container */
+  background-position: center;
+  border-radius: 5%;
+}
+
+.swiper-slide--four {
+  /* background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), */
+  /* url("https://images.pexels.com/photos/8728382/pexels-photo-8728382.jpeg?auto=compress&cs=tinysrgb&w=600") */
+  /* no-repeat 50% 50%; */
+  background-image: url("../assets/images/pages/Home/home-hero-carausel-img.avif");
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center;
+  border-radius: 5%;
+}
+
+.swiper-slide--five {
+  /* background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), */
+  /* url("https://5.imimg.com/data5/SELLER/Default/2021/2/OF/ZU/EB/121708011/dissolved-oxygen-ppm-sensor-500x500.jpg") */
+  /* no-repeat 50% 50%; */
+  background-image: url("../assets/images/pages/Home/home-hero-carausel-img.avif");
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center;
+  border-radius: 5%;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}

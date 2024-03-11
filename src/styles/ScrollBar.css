@@ -1,0 +1,13 @@
+/* ScrollBar.css or your custom style file */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 2px; /* Width of the scrollbar */
+  }
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+  }
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5%;
+    /* Thumb color */
+  }
+  

@@ -1,0 +1,31 @@
+/* HeartBtn.css */
+
+.heart-btn > .icon-heart {
+   background: url(http://i.imgur.com/MIP7hPg.png);
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size: auto;
+   height: 100px;
+   width: 100px;
+   cursor: pointer;
+   display: inline-block;
+   margin: 0; /* Reset margin */
+   padding: 0; /* Reset padding */
+   vertical-align: middle; /* Aligns the icon vertically within the line */
+ }
+ 
+ .heart-btn > .icon-heart.icon-heart--clicked {
+   -webkit-animation: animateLove 1s steps(14, start);
+   animation: animateLove 1s steps(14, start);
+   background-position: right;
+ }
+ 
+ @keyframes animateLove {
+   0% {
+     background-position: 0px 0px;
+   }
+   100% {
+     background-position: -2800px 0px;
+   }
+ }
+ 

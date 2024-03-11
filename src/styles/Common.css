@@ -1,0 +1,13 @@
+.black-bg{
+    /* background-image: url("https://c4.wallpaperflare.com/wallpaper/617/363/732/wave-red-lines-light-wallpaper-thumb.jpg"); */
+    background-image: url("../assets/images/footer-bg-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .brown-bg {
+    background: #870000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }

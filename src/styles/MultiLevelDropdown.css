@@ -1,0 +1,121 @@
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 120px;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    /* top: 100%; */
+    margin-top: 20%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 0;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .dropdown-item {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sub-dropdown-toggle {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 8px 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sub-dropdown-toggle:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sub-dropdown-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    transition: transform 0.3s ease;
+  }
+  
+  .sub-dropdown-menu {
+    position: absolute;
+    top: 0;
+    right: calc(100% + 10px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 0;
+    min-width: 120px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  .sub-dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  
+  .sub-dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .sub-dropdown-item {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .sub-dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  
